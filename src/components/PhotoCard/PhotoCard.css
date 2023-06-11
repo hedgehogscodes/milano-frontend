@@ -1,0 +1,130 @@
+.photo-grid__image {
+  color: #000;
+  cursor: pointer;
+  -o-object-fit: cover;
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  min-height: 203px;
+  max-height: 203px;
+}
+
+.photo-grid__item {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-background-b, #222);
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, .08);
+}
+
+.photo-grid__box {
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.photo-grid__profile-box {
+  padding: 9px;
+}
+
+.profile-box__info{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.photo-grid__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 270px;
+}
+
+.photo-grid__name {
+  margin: 0;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 270px;
+}
+
+.photo-grid__subtitle{
+  margin: 0;
+  padding-top: 9px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #8B8B8B;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 270px;
+}
+
+.photo-grid__button {
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  align-self: center;
+  justify-self: center;
+  background: var(--color-background-d, #303030) url('../../images/save-icon.svg') no-repeat center;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  transition: opacity 0.2s linear;
+}
+
+.photo-grid__avatar {
+  background-image: url('#');
+  min-width: 32px;
+  min-height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  align-self: flex-start;
+  margin: 0 9px 0 0;
+  position: relative;
+}
+
+.photo-grid__button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.photo-grid__button_action_save {
+  background: var(--color-green, #3DDC84) url('../../images/saved-icon.svg') no-repeat center;
+}
+
+.photo-grid__button_action_delete {
+  background: var(--color-background-d, #303030) url('../../images/close-button.svg') no-repeat center;
+  background-size: 12px;
+}
+
+.photo-grid__button_action_delete-created {
+  background: var(--color-background-d, #303030) url('../../images/deletebutton.png') no-repeat center;
+  background-size: 12px;
+}
+
+
+@media screen and (max-width: 768px) { 
+  .photo-grid__image {
+    min-height: 190px;
+    max-height: 190px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .photo-grid__image {
+    min-height: 168px;
+    max-height: 168px;
+  }
+}

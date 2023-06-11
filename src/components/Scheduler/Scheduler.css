@@ -1,0 +1,63 @@
+.scheduler-container {
+  height: calc(100vh - 50px - 200px);
+  padding: 0 max(calc(50% - 585px), 70px);
+  width: 100%;
+  color: white;
+}
+
+@media screen and (max-width: 1024px) { 
+  .scheduler-container {
+    padding: 0;
+  }
+}
+
+.dhx_cal_navline.dhx_cal_navline_flex .dhx_cal_tab {
+  box-shadow: -1px 0 0 #78c6a3;
+}
+
+.dhx_cal_tab, .dhx_cal_tab.active {
+  border: 1px solid #78c6a3;
+  color: #78c6a3;
+}
+
+.dhx_cal_tab.active {
+  color: white;
+  background-color: #78c6a3;
+}
+
+
+.dhx_cal_today_button {
+  color: #78c6a3;
+}
+
+.dhx_cal_tab.active:hover {
+  color: #fff;
+  background-color: #78c6a3;
+}
+
+
+element.style {
+  position: absolute;
+  top: 106px;
+  left: 1px;
+  width: 127px;
+  height: 40px;
+}
+
+.dhx_cal_data div .dhx_body, .dhx_cal_data div .dhx_body div, .dhx_cal_data div .dhx_cal_event, .dhx_cal_data div .dhx_cal_event div, .dhx_cal_data div .dhx_footer, .dhx_cal_data div .dhx_footer div, .dhx_cal_data div .dhx_title, .dhx_cal_data div .dhx_title div {
+  background-color: #78c6a3;
+}
+
+.dhx_cal_qi_title {
+  background-color: #78c6a3;
+}
+
+.dhx_cal_ltitle {
+  border-bottom: 1px solid #78c6a3;
+  background: #78c6a3;
+}
+
+.dhx_save_btn_set {
+  border: 1px solid #78c6a3;
+  background-color: #78c6a3;
+}

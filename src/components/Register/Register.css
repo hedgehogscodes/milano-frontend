@@ -1,0 +1,61 @@
+.sign {
+  padding: 70px max(calc(50% - 198px), 30px);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.sign__logo-box {
+  padding: 0 0 40px ;
+  display: flex;
+}
+
+.sign__text {
+  margin: 16px 0 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #8B8B8B;
+}
+
+.sign__link {
+  color: var(--color-blue, #4285F4);
+  text-decoration: none;
+  transition: opacity 0.2s linear;
+}
+
+.sign__link:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 420px) {
+  .sign {
+    padding: 56px max(calc(50% - 198px), 30px) 30px;
+  }
+  
+  .sign__logo-box {
+    justify-content: center;
+    margin-left: -77px;
+  }
+  
+  .logo{
+    margin: 0;
+  }
+  
+  .sign__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  
+  .sign__link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+

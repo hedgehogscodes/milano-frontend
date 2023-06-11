@@ -1,0 +1,131 @@
+.reviews{
+  padding: 0 max(calc(50% - 570px), 70px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews__list {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 720px;
+  margin-top: 20px;
+}
+
+.reviews__item{
+  padding: 14px;
+  list-style: none;
+  width: 100%;
+  background: var(--color-background-b, #222);
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, .08);
+  margin-bottom: 40px;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews__profile-box {
+  display: flex;
+}
+
+.reviews__avatar {
+  background-image: url('#');
+  min-width: 42px;
+  min-height: 42px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  align-self: flex-start;
+  margin: 0 9px 0 0;
+  position: relative;
+}
+
+.reviews__profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews__profile-name {
+  margin: 0;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 270px;
+}
+
+.reviews__profile-date{
+  margin: 0;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #8B8B8B;
+  margin-top: 8px;
+}
+
+.reviews__description{
+  margin: 0;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  word-break: break-all;
+}
+
+.reviews__form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews__input{
+  font-family: inherit;
+  width: 100%;
+  min-height: 40px;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  border-radius: 5px;
+  padding: 0 0 0 10px;
+  background-color: var(--color-background-d, #303030);
+  color: white;
+}
+
+.reviews__input:focus {
+  outline: none;
+}
+
+.reviews__btn {
+  cursor: pointer;
+  box-shadow: none;
+  outline: none;
+  padding: 0;
+  display: block;
+  width: 150px;
+  height: 35px;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--color-green, #3DDC84);
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  margin: 25px auto 0;
+  transition: opacity .2s ease-in-out;
+}
+
+.reviews__btn:hover {
+  opacity: .6;
+}
+
+@media screen and (max-width: 768px) { 
+  .reviews__item {
+    margin-bottom: 35px;
+  }
+}

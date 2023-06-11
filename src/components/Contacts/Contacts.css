@@ -1,0 +1,78 @@
+.contacts {
+  padding: 110px max(calc(50% - 570px), 70px) 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts__list {
+  display: flex;
+  gap: 40px;
+  padding: 50px 0 0;
+  list-style: none;
+  margin: 0;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.contacts__row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.geo-icon {
+  width: 20px;
+  height: 20px;
+  background-image: url('//yastatic.net/s3/web4static/_/v2/static/media/LocationFilled_16_g-text-secondary_dark.7287d857.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+}
+
+.telephone-icon {
+  width: 20px;
+  height: 20px;
+  background-image: url('//yastatic.net/s3/web4static/_/v2/static/media/Call_16_g-text-secondary_dark.21b3e394.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+}
+
+.mail-icon {
+  width: 20px;
+  height: 20px;
+  background-image: url('//yastatic.net/s3/web4static/_/v2/static/media/Site_16_g-text-secondary_dark.cec15649.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+}
+
+.time-icon {
+  width: 20px;
+  height: 20px;
+  background-image: url('//yastatic.net/s3/web4static/_/v2/static/media/Clock_20_g-text-primary_dark.05ffd64e.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .contacts {
+    padding: 50px 50px;
+  }
+
+  .contacts__list {
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (max-width: 420px) {
+  .contacts {
+    padding: 14px 18px 0;
+  }
+}

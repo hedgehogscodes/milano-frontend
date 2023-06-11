@@ -1,0 +1,120 @@
+.form {
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__title {
+  margin: 0 0 40px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+
+.form__input-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #8B8B8B;
+}
+
+.form__input {
+  background-color: inherit;
+  color: var(--color-default, #fff);
+  border: none;
+  padding: 0;
+  min-height: 27px;
+  margin-bottom: 6px;
+  outline: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  border-bottom: 1px solid #424242;
+  transition: all 0.2s linear;
+}
+
+.form__input:focus {
+  border-bottom: 1px solid #4285F4;
+}
+
+.form__input_type_error {
+  color: var(--color-red, #EE3465);
+}
+
+.form__message{
+  margin-top: auto;
+  margin-bottom: 5px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: var(--color-green, #3DDC84);
+  visibility: hidden;
+  opacity: 0;
+  transition: all .2s linear;
+}
+
+.form__message_visible {
+  visibility: visible;
+  opacity: 1;
+  transition: all .2s linear;
+}
+
+.form__message_type_error {
+  color: var(--color-red, #EE3465);
+}
+
+.form__error_visible {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: var(--color-red, #EE3465);
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.form__btn {
+  border: none;
+  background: var(--color-blue, #4285F4);
+  color: var(--color-default, #fff);
+  height: 45px;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  transition: opacity 0.2s linear;
+}
+
+.form__btn_disabled{
+  border: none;
+  height: 45px;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  transition: opacity 0.2s linear;
+  background-color: var(--color-background-c, #272727);
+  color: var(--color-background-d, #303030);
+}
+
+.form__btn:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 420px) {
+
+  .form {
+    min-height: 575px;
+  }
+
+  .form__title {
+    margin: 0 auto 80px;
+    text-align: center;
+  }
+
+}

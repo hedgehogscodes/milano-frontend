@@ -1,0 +1,20 @@
+.page {
+  min-width: 290px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Inter", "Arial", sans-serif;
+  --color-default: #fff;
+  --color-background-a: #202020;
+  --color-background-b: #222222;
+  --color-background-c: #272727;
+  --color-background-d: #303030;
+  --color-green: #3DDC84;
+  --color-blue: #4285F4;
+  --color-red: #EE3465;
+  color: var(--color-default, #fff);
+  background: var(--color-background-a, #202020);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

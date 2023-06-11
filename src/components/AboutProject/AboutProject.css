@@ -1,0 +1,127 @@
+.about-project {
+  padding: 110px max(calc(50% - 570px), 70px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-project__list {
+  display: flex;
+  gap: 40px;
+  padding: 70px 0 0;
+  list-style: none;
+  margin: 0;
+}
+
+.about-project__title{
+  margin: 0;
+  padding: 0 0 26px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+}
+
+.about-project__text{
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+  
+.project-timeline {
+  padding: 110px 0 0;
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: minmax(100px, min(21%, 228px)) 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.project-timeline__item {
+  margin: 0;
+  padding: 9px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #8B8B8B
+}
+
+.project-timeline__item_theme_green {
+  color: #000;
+  background-color: var(--color-green, #3DDC84)
+}
+
+.project-timeline__item_theme_gray {
+  color: var(--color-default, #fff);
+  background-color: var(--color-background-d, #303030)
+}
+
+@media screen and (max-width: 768px) {
+
+  .about-project {
+    padding: 90px 50px;
+  }
+
+  .about-project__list {
+    gap: 30px;
+  }
+
+  .about-project__title{
+    padding: 0 0 22px;
+  }
+
+  .about-project__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .project-timeline {
+    padding: 90px 0 0;
+  }
+
+}
+
+
+@media screen and (max-width: 420px) {
+  .section-title {
+    padding: 0 0 28px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .about-project {
+    padding: 70px 18px;
+  }
+
+  .about-project__list {
+    flex-direction: column;
+    gap: 56px;
+  }
+
+  .about-project__title{
+    padding: 0 0 16px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .about-project__text {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .project-timeline {
+    padding: 90px 0 0;
+  }
+
+  .project-timeline {
+    padding: 60px 0 0;
+  }
+
+  .project-timeline__item {
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
