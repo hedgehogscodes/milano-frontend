@@ -10,7 +10,7 @@ function Reviews({ reviews, onAddReview }) {
   const [reviewsList, setReviewsList] = useState([]);
   const [cardsInitCount, setCardsInitCount] = useState(0);
   const [cardsAddCount, setCardsAddCount] = useState(0);
-  const [message, setMessage] = useState('Здесь будут отзывы, оставленные пользователяии')
+  const [message, setMessage] = useState('Здесь будут отзывы, оставленные пользователями')
   const [description, setDescription] = useState("");
   const isLoggedIn = useContext(CurrentUserContext);
 
